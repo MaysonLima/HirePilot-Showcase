@@ -1,0 +1,11 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="theme-color" content="#F7F9FE"/><link rel="icon" type="image/png" href="/hirepilot-icon.png?v=2" sizes="192x192"/><title>HirePilot — Seu copiloto de carreira</title><script>
+  try {
+    const stored = localStorage.getItem('hirepilot.theme')
+    const selected = ['light','dark','system'].includes(stored) ? stored : 'light'
+    document.documentElement.dataset.theme = selected === 'system'
+      ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      : selected
+  } catch {
+    document.documentElement.dataset.theme = 'light'
+  }
+</script></head><body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body></html>

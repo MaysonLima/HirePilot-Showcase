@@ -1,0 +1,36 @@
+# Dependências e builds
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.coverage
+# Configuração local e segredos
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+credentials.json
+token.json
+# Dados pessoais e documentos gerados
+Aplicacoes/
+Aplicações/
+curriculos/
+resumes/
+uploads/
+data/
+# Sistema/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
